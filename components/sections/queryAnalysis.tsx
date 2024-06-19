@@ -1,7 +1,5 @@
 
-import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
 import SentimentSection from "./subsections/sentimentSection";
 import KeywordSection from "./subsections/keywordSection";
 import TopicSection from "./subsections/topicSection";

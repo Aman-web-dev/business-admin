@@ -73,7 +73,7 @@ export default function Sidebar({
           <div className="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
             <Link href="/" className="flex items-center gap-2 font-semibold">
               <Package2 className="h-6 w-6" />
-              <span className="text-lg">Retention Systems</span>
+              <span className="text-lg">Business Admin</span>
             </Link>
           
           </div>
@@ -84,18 +84,18 @@ export default function Sidebar({
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary w-full text-lg"
               >
                 <Home className="h-6 w-8" />
-                Admin Home
+               Home
               </Link>
          
-              <Link
+              {/* <Link
                 href="/admin/business"
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary w-full text-lg"
               >
                 <Building2 className="h-6 w-8" />
                 Business{" "}
-              </Link>
+              </Link> */}
               <Link
-                href="/admin/settings"
+                href="/settings"
                 className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary w-full text-lg"
               >
                 <Settings className="h-6 w-8" />
@@ -146,7 +146,7 @@ export default function Sidebar({
                 Business
                 </Link>
                 <Link
-                  href="/admin/settings"
+                  href="/settings"
                   className="mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-foreground"
                 >
                   <Users className="h-5 w-5" />
@@ -169,7 +169,7 @@ export default function Sidebar({
               <DropdownMenuLabel>My Account</DropdownMenuLabel>
               <DropdownMenuSeparator />
               {/* <DropdownMenuItem>Profile</DropdownMenuItem> */}
-              <Link href={"/admin/settings"}>
+              <Link href={"/settings"}>
               <DropdownMenuItem>Settings</DropdownMenuItem>
               </Link>
               <DropdownMenuSeparator />
