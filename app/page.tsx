@@ -20,7 +20,7 @@ export default function Home() {
   const businessId = params.id;
 
   return (
-    <Tabs defaultValue="UserEngagement" className="w-[90%]">
+    <Tabs defaultValue="UserEngagement" className="w-full">
       <div className="flex">
         <div className="lg:hidden">
           <PanelDropDown />
@@ -39,7 +39,7 @@ export default function Home() {
         <div className="ml-auto flex items-center gap-2">
           <Button size="lg" className="h-10 gap-1">
             <Link
-              href={`/settings`}
+              href={`/settings/business`}
               className="flex flx-col gap-2 items-center"
             >
               <Settings className="h-3.5 w-3.5" />

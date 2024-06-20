@@ -23,7 +23,7 @@ export function UniversalCard({
   progress,
 }: CardProps) {
   return (
-    <Card x-chunk="dashboard-05-chunk-1 flex-1">
+    <Card x-chunk="dashboard-05-chunk-1 flex-1 ">
       <div className=" flex flex-col justify-between h-full items-center">
         <CardHeader className="pb-2 text-center ">
           <CardTitle className="text-sm ">{Heading}</CardTitle>
