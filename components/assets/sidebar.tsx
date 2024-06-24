@@ -1,3 +1,5 @@
+'use client'
+
 import React from "react";
 import {
   Tooltip,
@@ -45,6 +47,7 @@ import {
   Users2,
   Building2
 } from "lucide-react";
+import { signOut, useSession } from "next-auth/react";
 
 import {
   Menu,
@@ -173,7 +176,7 @@ export default function Sidebar({
               <DropdownMenuItem>Settings</DropdownMenuItem>
               </Link>
               <DropdownMenuSeparator />
-              {/* <DropdownMenuItem>Logout</DropdownMenuItem> */}
+              <DropdownMenuItem onClick={() => signOut()}>Logout</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
           <ModeToggle/>
